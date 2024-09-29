@@ -66,8 +66,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 1.5rem;
+}
+.default-data {
+  text-align: center;
 }
 @media (min-width: 426px) {
   .search {
