@@ -8,9 +8,8 @@ input.addEventListener("keydown", (e) => {
 
 async function getWeather() {
   const city = input.value;
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?q=${city}&key=be40b45426054aa398b112558242809`
-  );
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?q=${city}&key=be40b45426054aa398b112558242809`;
+  const response = await fetch(apiUrl);
   if (response.status === 400) {
     document.querySelector(".data").style.display = "none";
     document.querySelector(".default").style.display = "flex";
