@@ -9,7 +9,7 @@ input.addEventListener("keydown", (e) => {
 async function getWeather() {
   const city = input.value;
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?q=${city}&key=be40b45426054aa398b112558242809`
+    `https://api.weatherapi.com/v1/current.json?q=${city}&key=be40b45426054aa398b112558242809`
   );
   if (response.status === 400) {
     document.querySelector(".data").style.display = "none";
