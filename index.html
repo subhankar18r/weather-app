@@ -9,13 +9,18 @@
   <body>
     <div class="search">
       <input class="search-inp" type="text" placeholder="enter city name" />
-      <button class="search-btn">
+      <button class="search-btn" onclick="getWeather()">
         <img src="./images/search.png" alt="nothing" />
       </button>
     </div>
+    <div class="default">
+      <p class="default-data">
+        Waiting for input... Enter a city to get the current weather.
+      </p>
+    </div>
     <div class="data">
       <p class="location"></p>
-      <img src="images/clear.png" alt="clear" />
+      <img class="condition-icon" src="" alt="clear" />
       <p class="temp"></p>
       <p class="condition"></p>
       <div class="other-details">
